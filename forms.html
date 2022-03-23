@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Demo</title>
+  </head>
+  <body>
+    <h1>Forms Demo</h1>
+
+    <!--First form -->
+    <form action="/mfc">
+      <p>
+        <label for="username">Enter a Username</label>
+        <input
+          id="username"
+          type="text"
+          placeholder="username"
+          name="username"
+        />
+      </p>
+      <p>
+        <label for="password">Enter Password</label>
+        <input id="password" type="password" name="password" />
+      </p>
+      <p>
+        <label for="color">Select a Colour</label>
+        <input type="color" id="color" name="color" />
+      </p>
+      <p>
+        <label for="number">Select a Number</label>
+        <input type="number" id="number" name="num" min="0" max="1000" />
+      </p>
+      <button>Submit</button>
+    </form>
+    <!--End of first form-->
+
+    <br />
+    <hr />
+    <!--Google Form-->
+    <form action="https://www.google.com/search">
+      <input type="text" name="q" />
+      <button>Search Google</button>
+    </form>
+    <!--End of Second Form-->
+    <hr />
+    <br />
+    <!--Youtube Form-->
+    <form action="https://www.youtube.com/results">
+      <input type="text" name="search_query" />
+      <button>Search YouTube</button>
+    </form>
+    <!--End of Youtube form-->
+    <form action="/mfc1">
+      <h2>Random Inputs</h2>
+
+      <input type="checkbox" name="agree_tos" id="agree" />
+      <label for="agree">Agree TOS</label>
+
+      <hr />
+
+      <h2>Are Boro going up?</h2>
+      <label for="Yes">Yes</label>
+      <input type="radio" name="promotion" id="Yes" value="Yes" />
+      <label for="100">100%</label>
+      <input type="radio" name="promotion" id="100" value="100" />
+      <label for="sure">Sure</label>
+      <input type="radio" name="promotion" id="sure" value="sure" />
+
+      <p>
+        <label for="pos">MFC Player of the season</label>
+        <select name="pos" id="pos">
+          <option value="jones">Jones</option>
+          <option value="paddy">Paddy</option>
+          <option value="howson">Howson</option>
+          <option value="fry">Fry</option>
+        </select>
+      </p>
+      <p>
+        <label for="votes">Number of votes</label>
+        <input type="range" id="votes" min="1" max="10" name="votes" />
+      </p>
+
+      <p>
+        <label for="message">Message to player</label>
+        <br />
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="10"
+          placeholder="Type message here"
+          required
+        ></textarea>
+      </p>
+
+      <button>UTB</button>
+    </form>
+
+    <h2>Validation Test</h2>
+    <form action="/dummy_test">
+      <label for="first">Enter First Name</label>
+      <input type="text" name="first" id="first" required />
+      <p>
+        <label for="username2">Username</label>
+        <input
+          type="text"
+          name="username"
+          id="username2"
+          minlength="5"
+          maxlength="10"
+          required
+        />
+      </p>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

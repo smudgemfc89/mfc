@@ -1,0 +1,47 @@
+body {
+  margin: 10px;
+  background-color: #f5ebe0;
+}
+
+h1 {
+  text-align: center;
+  color: #6b705c;
+}
+h2 {
+  text-align: center;
+  width: 18%;
+  color: #6b705c;
+}
+button {
+  font-size: 20px;
+  background: #588157;
+}
+#signup {
+  background-color: #9e2a2b;
+  color: #fff3b0;
+}
+
+span {
+  color: #9e2a2b;
+}
+
+footer a {
+  color: #c1121f;
+}
+
+footer > a {
+  color: #4d194d;
+}
+
+input[type="password"] {
+  color: #c1121f;
+}
+a:hover {
+  background-color: blueviolet;
+  color: azure;
+  text-decoration: line-through;
+}
+
+.post:nth-of-type(3n) {
+  background-color: #da9240;
+}
